@@ -2,19 +2,19 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Main.java to edit this template
  */
-package doga_mvc;
+package main;
 
-/**
- *
- * @author kovacs.i.gabor
- */
+import modell.Modell;
+import nezet.Nezet;
+import kontroller.Kontroller;
+
 public class Doga_mvc {
 
-    /**
-     * @param args the command line arguments
-     */
+    
     public static void main(String[] args) {
-        // TODO code application logic here
+        Modell modell= new Modell();
+        Nezet nezet = new Nezet();
+        new Kontroller(modell, nezet);
     }
     
 }
